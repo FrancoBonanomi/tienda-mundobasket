@@ -1,0 +1,177 @@
+
+@import url(cabecera.css);
+@import url(menu.css);
+@import url(portada.css);
+@import url(principal.css);
+@import url(galeria.css);
+@import url(pie.css);
+@import url(formulario.css);
+
+@font-face {
+    font-family: asus;
+    src: url(fuentes/asus/LTAsusMono-Regular.ttf);
+}
+:root{
+    --width: clamp(320px,80vw,1200px);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 1em;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-image: url(../img/slider/imgslider5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: asus;
+}
+.contenedor{
+    width: var(--width);
+    margin: 0 auto;
+}
+
+
+
+
+/**{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: asus;
+    src: url(fuentes/asus/LTAsusMono-Regular.ttf);
+}
+@font-face {
+    font-family: hoyle;
+    src: url(fuentes/hoyle/hoylepersonal-regular.ttf);
+}
+
+body{
+    font-family: hoyle;
+    background-image: url(../img/slider/imgslider5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: orange;
+    background-blend-mode: multiply;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.658);
+   height: 18vw;
+   border-bottom: 5px solid palegoldenrod;
+   padding: 0 0.8em;
+}
+
+.redes__imagen{
+    width: 5vw;
+    margin-right: 0.5em;
+    filter: drop-shadow(2px 2px 2px black)
+}
+.redes{
+    align-self: flex-start;
+}
+.cabecera__logo{
+    width: 7vw;
+}
+.titulo{
+    font-size: clamp(2rem,3.2vw,3.3rem);
+    letter-spacing: 1px;
+}
+.menu{
+    background-color: orangered;
+    padding: 2em 0.5em;
+    border-bottom: 5px solid palegoldenrod;
+    position: relative;
+}
+.img-menu{
+    width: 32px;
+    position: absolute;
+    top: calc(50% - 1em);
+    transition: all 0.5s;
+}
+.cerrar{
+    transform: scale(0);
+}
+.menu__ul{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: -100%;
+    transition:all 0.5s;
+    z-index: 1;
+}
+.menu:target .menu__ul{
+left: 0%;
+}
+.menu:target .cerrar{
+    transform: scale(1);
+}
+.menu:target .abrir{
+    transform: scale(0);
+}
+.menu:target ~ .portada {
+    opacity: 0;
+}
+.menu__link{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: clamp(1.2rem,1.4vw,1.8rem);
+    width: 100%;
+    transition: all 0.5s;
+    border-bottom: 1px solid whitesmoke;
+}
+.menu__link:hover{
+    background-color: rgba(0, 0, 0, 0.541);
+    color: orangered;
+}
+.portada{
+    /*overflow: hidden;
+    margin: 2rem 0;
+    border: 5px solid palegoldenrod;
+    outline: 2px solid palegoldenrod;
+    outline-offset: 0.7rem;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    animation: slider 30s infinite alternate ease-in-out;
+    height: 500px;
+    
+}
+.slider__item{
+    width: 100%;
+   aspect-ratio: 16/9;
+   height: 100%;
+   
+   
+ 
+    
+}
+/*@keyframes slider{
+    0%,20%{
+        margin-left: -0%;
+    }
+    25%,45%{
+        margin-left: -100%;
+    }
+    50%,70%{
+        margin-left: -200%;
+    }
+    75%,100%{
+        margin-left: -300%;
+    }
+}*/

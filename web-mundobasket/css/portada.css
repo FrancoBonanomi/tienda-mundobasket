@@ -1,0 +1,31 @@
+.portada{
+    overflow: hidden;
+    width: var(--width);
+    height: calc(var(--width)/2.5);
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slider 20s 2s infinite alternate ease-in-out;
+}
+.slider__item{
+    width: var(--width);
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+@keyframes slider{
+    0%,20%{
+        margin-left: 0%;
+    }
+    25%,45%{
+        margin-left:-100% ;
+    }
+    50%,70%{
+        margin-left: -200%;
+    }
+    75%,100%{
+        margin-left: -300%;
+    }
+}

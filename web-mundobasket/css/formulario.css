@@ -1,0 +1,40 @@
+.formulario{
+    width: 50%;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: block;
+}
+.formulario>*{
+    display: block;
+    width: 100%;
+}
+.formulario__label{
+    font-size: clamp(1rem,3vw,1.3rem);
+    margin-bottom: 0.3rem;
+}
+.formulario__input{
+    outline: none;
+    border: none;
+    border-bottom: 4px dotted black;
+    font-size: clamp(1rem,3vw,1.1rem);
+    background-color: transparent;
+    padding: 0.5em;
+    margin-bottom: 2rem;
+}
+.formulario__consulta,.formulario__boton{
+    font-size: clamp(1rem,3vw,1.2rem);
+    padding: 0.5em 0.75em;
+}
+.formulario__consulta{
+    height: 20ch;
+    resize: none;
+    margin-bottom: 0.5rem;
+}
+.formulario__boton{
+    background-color: burlywood;
+    cursor: pointer;
+}
+.formulario__boton:hover, .formulario__boton:active{
+    background-color: rgb(147,110 ,62 );
+    color: white;
+}

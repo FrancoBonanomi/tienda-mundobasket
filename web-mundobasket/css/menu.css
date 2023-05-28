@@ -1,0 +1,38 @@
+.menu{
+    background-color: black;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.menu__ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.menu__item{
+    width: calc((100% - 1em)/2);
+}
+.menu__link{
+    display: block;
+    font-size: clamp(1rem,2vw,1.6rem);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: beige;
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    transition: all 0.5s;
+}
+.menu__link:hover,.menu__link:active,.menu__link--actual{
+    background-color: burlywood;
+    font-weight: bold;
+}
+@media(min-width:600px){
+    .menu__item{
+        width: calc((100% - 3em)/4);
+    }
+}

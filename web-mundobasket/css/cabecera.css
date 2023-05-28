@@ -1,0 +1,25 @@
+.cabecera{
+    background-color: rgba(245,245 ,220,0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+.logo{
+    width: clamp(80px,10vw,300px);
+    border-radius: 1em;
+}
+.titulo{
+    font-family: white-storm;
+    font-size: clamp(2rem,5vw,4rem);
+    text-align: center;
+  
+}
+.redes{
+    display: flex;
+    gap: 0.5em;
+}
+.redes__imagen{
+    width: clamp(30px,4vw,100px);
+}
